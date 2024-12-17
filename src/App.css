@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1300px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1280px !important;
+  }
+}
+
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  height: 4px !important;
+  width: 4px !important;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #0000 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.bg-purple {
+  background: #6d4aae;
+}
+
+.headerWrapperFixed {
+  background: #fff;
+  left: 0;
+  position: fixed;
+  top: 34px;
+  top: 0;
+  transition: all .3s ease-in-out;
+  width: 100%;
+
+}
+
+.headerWrapper {
+  background: #fff;
+  border-bottom: 1px solid #0000001a;
+}
+
+.headerWrapper .top-strip {
+  padding: 8px 0;
+}
+
+.headerWrapper .top-strip p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.logoWrapper img {
+  width: 100%;
+}
+
+.headerWrapper .header .part2 .countryDrop {
+  border: 1px solid #0000001a !important;
+  border-radius: 7px !important;
+  color: #000 !important;
+  height: 50px;
+  min-width: 170px;
+  padding: 10px 15px !important;
+  width: 170px;
+  justify-content: flex-start !important;
+  text-align: left;
+
+}
+
+
+.countryDrop .label,
+.countryDrop .name {
+  line-height: 16px;
+  text-transform: capitalize !important;
+}
+
+.countryDrop .label {
+  color: #0006 !important;
+  font-size: 12px !important;
+}
+
+.countryDrop .name {
+  color: #6d4aae !important;
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.headerSearchWrapper {
+  width: 58%;
+  position: relative;
+}
+
+.headerSearch {
+  background: #e5e5e5;
+  border: 1px solid #0000000d;
+  border-radius: 5px;
+  height: 50px;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+}
+
+.headerSearch input {
+  background: #0000 !important;
+  border: 0 !important;
+  color: #000000b3;
+  font-size: 16px;
+  height: 37px;
+  outline: none !important;
+  padding: 0 20px !important;
+  width: 100%;
+}
+
+.headerSearch button {
+  border-radius: 50% !important;
+  color: #000;
+  height: 40px !important;
+  min-width: 40px !important;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 40px !important;
+  z-index: 100;
+}
+
+.part3 a {
+  background-color: initial;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-round {
+  border-radius: 30px !important;
+}
+
+.btn-blue {
+  background: #6d4aae !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  padding: 5px 20px !important;
+}
+
+.btn-blue,
+button {
+  text-transform: capitalize !important;
+}
+
+
+.cartTab .price {
+  color: #000c;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+header .part3 .circle {
+  align-items: center;
+  background: #ededed;
+  border: 1px solid #0000001a !important;
+  border-radius: 50% !important;
+  color: #000;
+  height: 45px !important;
+  justify-content: center;
+  min-width: 45px !important;
+  width: 45px !important;
+}
+
+.cartTab button {
+  background: #fff1ee !important;
+}
+
+.cartTab .count {
+  background: #ea2b0f;
+  border-radius: 50%;
+  color: #fff;
+  height: 20px;
+  position: absolute;
+  right: -4px;
+  top: -6px;
+  width: 20px;
+}
+
+nav .navPart1 {
+  flex: 0 0 17%;
+  max-width: 17%;
+}
+
+nav .navPart1 .catWrapper {
+  position: relative;
+}
+
+nav .allCatTab {
+  background: #6d4aae;
+  border-radius: 30px !important;
+  padding: 7px 12px !important;
+}
+
+nav .allCatTab * {
+  color: #fff;
+}
+
+nav .allCatTab .text {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+nav .navPart2 {
+  flex: 0 0 83%;
+  max-width: 83%;
+}
+
+.close {
+  opacity: 1 !important;
+  color: #000;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+}
+
+nav .navPart2 ul {
+  margin-bottom: 0;
+}
+
+nav .navPart2 ul li {
+  position: relative;
+  margin-right: 0 !important;
+  padding-bottom: 20px;
+}
+
+nav .navPart2 ul li a {
+  text-decoration: none;
+}
+
+nav .navPart2 ul li a button {
+  align-items: center;
+  border-radius: 25px;
+  color: #000000b3;
+  display: flex;
+  font-size: 14px !important;
+  font-weight: 600;
+  padding: 6px 20px;
+  text-decoration: none;
+  text-transform: uppercase !important;
+  transition: all .2s ease-in-out;
+}
+
+nav .navPart2 ul li .submenu a {
+  display: block;
+  width: 100%;
+}
+
+nav .navPart2 ul li .submenu {
+  background: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 3px 6px #00000029, 0 3px 6px #0000003b;
+  left: 0;
+  min-width: 200px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 150%;
+  transition: all .2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+nav .navPart2 ul li:hover .submenu {
+  opacity: 1;
+  top: 100%;
+  visibility: inherit;
+}
+
+nav .navPart2 ul li .submenu a button {
+  background: #fff;
+  border-radius: 0 !important;
+  color: #282828 !important;
+  font-weight: 500 !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  text-transform: capitalize !important;
+  width: 100%;
+}
+
+nav .navPart2 ul li .submenu a button:hover {
+  background: #f1f1f1 !important;
+}
+
+.locationModal .MuiPaper-elevation {
+  padding: 25px;
+  position: relative;
+
+}
+
+.locationModal .MuiPaper-elevation h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.locationModal .MuiPaper-elevation p {
+  font-size: 13px;
+}
+
+.locationModal .countryList {
+  margin-bottom: 0;
+  max-height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.locationModal .countryList li {
+  list-style: none;
+  width: 100%;
+}
+
+.locationModal .countryList li button {
+  color: #000 !important;
+  justify-content: flex-start !important;
+  padding: 10px 20px !important;
+  text-transform: capitalize !important;
+  width: 100%;
+}
