@@ -28,10 +28,19 @@
   width: 100%;
 }
 
+Button {
+  outline: none !important;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
 ::-webkit-scrollbar {
   height: 4px !important;
   width: 4px !important;
- 
+
 }
 
 ::-webkit-scrollbar-thumb {
@@ -39,7 +48,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0000 !important;
+  background: #cccccc !important;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
@@ -210,16 +219,29 @@ header .part3 .circle {
 nav .navPart1 {
   flex: 0 0 17%;
   max-width: 17%;
-}
-
-nav .navPart1 .catWrapper {
   position: relative;
 }
 
 nav .allCatTab {
-  background: #6d4aae;
-  border-radius: 30px !important;
-  padding: 7px 12px !important;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: var(--font-secondary);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  background-color: #2bbef9;
+  border-radius: 50px;
 }
 
 nav .allCatTab * {
@@ -259,19 +281,24 @@ nav .navPart2 ul li {
 
 nav .navPart2 ul li a {
   text-decoration: none;
+  font-size: 16px;
+  color: #3e445a;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  transition: all 0ms ease-in-out;
 }
 
-nav .navPart2 ul li a button {
-  align-items: center;
-  border-radius: 25px;
-  color: #000000b3;
-  display: flex;
-  font-size: 14px !important;
-  font-weight: 600;
-  padding: 6px 20px;
-  text-decoration: none;
-  text-transform: uppercase !important;
-  transition: all .2s ease-in-out;
+nav .navPart2 ul li a img {
+  width: 20px;
+  height: 20px;
+}
+
+nav .navPart2 ul li a:hover {
+  background: #f0faff;
+  color: #2bbef9;
 }
 
 nav .navPart2 ul li .submenu a {
@@ -349,4 +376,47 @@ nav .navPart2 ul li .submenu a button:hover {
   padding: 10px 20px !important;
   text-transform: capitalize !important;
   width: 100%;
+}
+
+nav .navPart1 .sidebarNav {
+  background: #fff;
+  border: 1px solid #0000001a;
+  left: 16px;
+  padding-top: 18px;
+  padding-bottom: 2px;
+  position: absolute;
+  top: 100%;
+  transition: all 0.5s;
+  visibility: hidden;
+  overflow: hidden;
+  min-width: 215px;
+  z-index: 100;
+  opacity: 0;
+}
+
+nav .navPart1 .sidebarNav.open {
+  height: auto;
+  opacity: 1;
+  visibility: inherit;
+}
+
+nav .navPart1 .sidebarNav ul li {
+  position: static;
+
+}
+
+nav .navPart1 .sidebarNav ul li button {
+  color: #000;
+  justify-content: flex-start;
+  text-align: left !important;
+  text-transform: capitalize !important;
+  padding-left: 25px;
+  padding-bottom: 18px;
+  width: 100%;
+}
+
+nav .navPart1 .sidebarNav ul li button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
 }

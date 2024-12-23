@@ -6,7 +6,7 @@ import { IoSearch } from 'react-icons/io5'
 const SearchBox = () => {
   return (
       <div className='headerSearch'>
-        <input type='text' placeholder="Tìm kiếm sản phẩm ..." />
+        <input type='text' placeholder="Search for products ..." />
         <Button >
           <IoSearch />
         </Button>
