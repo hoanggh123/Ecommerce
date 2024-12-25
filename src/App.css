@@ -51,10 +51,27 @@ li {
   background: #cccccc !important;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+.text-ligh {
+  color: #8b8b8b !important;
+}
+
+.text-sml {
+  color: #8b8b8b !important;
+  font-size: 14px !important;
 }
 
 .bg-purple {
@@ -65,11 +82,10 @@ body {
   background: #fff;
   left: 0;
   position: fixed;
-  top: 34px;
   top: 0;
   transition: all .3s ease-in-out;
   width: 100%;
-
+  z-index: 1000;
 }
 
 .headerWrapper {
@@ -317,14 +333,14 @@ nav .navPart2 ul li .submenu {
   overflow: hidden;
   position: absolute;
   top: 150%;
-  transition: all .2s ease-in-out;
+  transition: all .5s ease-in-out;
   visibility: hidden;
   z-index: 100;
 }
 
 nav .navPart2 ul li:hover .submenu {
   opacity: 1;
-  top: 100%;
+  top: 105%;
   visibility: inherit;
 }
 
@@ -386,10 +402,10 @@ nav .navPart1 .sidebarNav {
   padding-bottom: 2px;
   position: absolute;
   top: 100%;
+  border-radius: 0 0 0 7px;
   transition: all 0.5s;
   visibility: hidden;
-  overflow: hidden;
-  min-width: 215px;
+  min-width: 225px;
   z-index: 100;
   opacity: 0;
 }
@@ -401,17 +417,19 @@ nav .navPart1 .sidebarNav.open {
 }
 
 nav .navPart1 .sidebarNav ul li {
-  position: static;
+  position: relative;
+}
 
+nav .navPart1 .sidebarNav ul li:hover>a button span {
+  color: #2bbef9;
 }
 
 nav .navPart1 .sidebarNav ul li button {
-  color: #000;
+  color: #3e445a;
   justify-content: flex-start;
   text-align: left !important;
   text-transform: capitalize !important;
-  padding-left: 25px;
-  padding-bottom: 18px;
+  padding: 9px 0 9px 25px;
   width: 100%;
 }
 
@@ -419,4 +437,217 @@ nav .navPart1 .sidebarNav ul li button img {
   width: 20px;
   height: 20px;
   margin-right: 25px;
+}
+
+nav .navPart1 .sidebarNav ul li {
+  position: static;
+}
+
+
+nav .navPart1 .sidebarNav ul li .sub-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-left: 0;
+  padding-top: 1.25rem;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #0000001a;
+  border-top: 0;
+  border-radius: 0 0 7px 0;
+  white-space: nowrap;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: all 0.25s cubic-bezier(0.28, 0.12, 0.22, 1);
+  transition: all 0.25s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+
+nav .navPart1 .sidebarNav ul li .sub-menu li a Button {
+  color: #6a6c72;
+}
+
+nav .navPart1 .sidebarNav ul li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+.homeBannerSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.homeBannerSection * {
+  outline: none !important;
+
+
+}
+
+.homeBannerSection .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 100%;
+  background-color: #444444;
+
+}
+
+.homeBannerSection .slick-arrow.slick-next {
+  right: 25px !important;
+}
+
+.homeBannerSection .slick-arrow.slick-prev {
+  left: 25px !important;
+}
+
+.homeBannerSection .slick-arrow.slick-next::before {
+  font-family: FontAwesome !important;
+  color: #fff;
+}
+
+.homeBannerSection .slick-arrow.slick-prev::before {
+  font-family: FontAwesome !important;
+  color: #fff;
+}
+
+.homeBannerSection img {
+  border-radius: 6px;
+}
+
+.homeProducts {
+  padding: 25px 0px;
+  width: 100%;
+}
+
+.homeProducts .banner {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.viewAllBtn {
+  padding: 8px 16px !important;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 30px !important;
+  color: #000 !important;
+}
+
+.viewAllBtn svg {
+  font-size: 20px;
+
+}
+
+.productItem {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+
+.productItem .badge {
+  position: absolute;
+  display: inline-block;
+  padding: 7px 10px;
+  top: 18px;
+  left: 18px;
+  z-index: 1;
+}
+
+.productItem .info {
+  padding: 15px;
+}
+
+.productItem h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.productItem .info .oldPrice {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c2c2d3;
+  text-decoration: line-through;
+}
+
+.productItem .info .netPrice {
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+
+.productItem .actions {
+  position: absolute;
+  top: 15px;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  transition: all .3s ease-in-out;
+}
+
+.productItem .actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  color: #3e445a !important;
+  background-color: #fff;
+  border: 1px solid #edeef5;
+  border-radius: 50% !important;
+  margin: 4px 0;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0, 0, 0 / 24%) !important;
+}
+
+.productItem .actions button svg {
+  color: #000 !important;
+  opacity: 0.8;
+  pointer-events: none;
+  font-size: 18px !important;
+}
+
+.productItem .actions button:hover {
+  background: #233a96 !important;
+}
+
+.productItem {
+  overflow: hidden;
+}
+
+.productItem:hover .actions {
+  opacity: 1;
+  right: 10px;
+}
+
+.product_row .item {
+  border-right: 1px solid transparent !important;
+}
+
+.product_row .swiper-slide:last-child .productItem {
+  border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.swiper {
+  padding-right: 1px !important;
+}
+
+.badge-primary {
+  background: #2bbef9 !important;
 }

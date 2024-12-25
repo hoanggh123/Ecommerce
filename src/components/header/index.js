@@ -29,7 +29,7 @@
                     context.countryList.length !== 0 && <CountryDropDown />
                   }
                   <div className='headerSearchWrapper'>
-                    <div className='d-flex align-item-center ml-3 mr-3'>
+                    <div className='d-flex align-items-center ml-3 mr-3'>
                       <SearchBox />
                     </div>
                   </div>

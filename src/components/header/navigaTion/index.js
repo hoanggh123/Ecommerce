@@ -11,8 +11,7 @@ const Navigation = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-sm-3 navPart1'>
-
-                        <Button className='allCatTab align-item-center' onClick={() => setIsOpenSidebarNav(!isOpenSidebarNav)}>
+                        <Button className='allCatTab align-items-center' onClick={() => setIsOpenSidebarNav(!isOpenSidebarNav)}>
                             <span className='icon1 mr-2'><IoIosMenu /></span>
                             <span className="text">ALL CATEGORIES</span>
                             <span className='icon2  ml-2'><FaAngleDown /></span>
@@ -26,7 +25,36 @@ const Navigation = () => {
                                             <span>Fruits & Vegetables</span>
                                         </Button>
                                     </a>
-
+                                    <ul className="sub-menu">
+                                        <li className=""><a href="/">
+                                            <Button>
+                                                <span>Cuts & Sprouts</span>
+                                            </Button></a></li>
+                                        <li className=""><a href="/">
+                                            <Button>
+                                                <span>Exotic Fruits & Veggies</span>
+                                            </Button></a></li>
+                                        <li className=""><a href="/">
+                                            <Button>
+                                                <span>Fresh Fruits</span>
+                                            </Button></a></li>
+                                        <li className=""><a href="/">
+                                            <Button>
+                                                <span>Fresh Vegetables</span>
+                                            </Button></a></li>
+                                        <li className=""><a href="/">
+                                            <Button>
+                                                <span>Herbs & Seasonings</span>
+                                            </Button></a></li>
+                                        <li className=""><a href="/">
+                                            <Button>
+                                                <span>Packaged Produce</span>
+                                            </Button></a></li>
+                                        <li className=""><a href="/">
+                                            <Button>
+                                                <span></span>
+                                            </Button></a></li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href='/'>
@@ -197,13 +225,6 @@ const Navigation = () => {
                                         Blog
                                     </Link>
                                 </a>
-                                <div className='submenu false'>
-                                    <a href='/'>
-                                        <Link to="/">
-                                            Nam
-                                        </Link>
-                                    </a>
-                                </div>
                             </li>
                             <li className='list-inline-item'>
                                 <a href='/'>
@@ -212,13 +233,6 @@ const Navigation = () => {
                                         Contact
                                     </Link>
                                 </a>
-                                <div className='submenu false'>
-                                    <a href='/'>
-                                        <Link to="/">
-                                            Nam
-                                        </Link>
-                                    </a>
-                                </div>
                             </li>
                         </ul>
                     </div>
