@@ -14,12 +14,12 @@ const HomeBanner = () => {
     }
     return (
         <div>
-            <div className='container'>
+            <div className='container' style={{ marginTop: '270px' }}>
                 <div className='row'>
-                    <div className='col-md-3'>s</div>
+                    <div className='col-md-3'></div>
                     <div className='homeBannerSection col-md-9'>
                         <Slider {...settings}>
-                            <div className='item mt-5'>
+                            <div className='item'>
                                 <img src='https://raw.githubusercontent.com/rinkuv37/fullstack-ecommerce/refs/heads/main/images/slideBanner1.jpg' alt='banner' className='w-100'></img>
                             </div>
                             <div className='item'>
