@@ -124,115 +124,115 @@ const Navigation = () => {
                     <div className='col-sm-9 navPart2 d-flex align-items-center'>
                         <ul className='list list-inline ml-auto'>
                             <li className='list-inline-item'>
-                                <a href='/'>
+                                <div className='menuLink'>
                                     <img src='https://img.icons8.com/?size=100&id=73&format=png&color=000000' alt='icons' />
                                     <Link to="/" >
                                         Home
                                     </Link>
-                                </a>
+                                </div>
+
                                 <div className='submenu false'>
-                                    <a href='/'>
+                                    <div className='menuLink' >
                                         <Link to='/'>
                                             Men
                                         </Link>
-                                    </a>
-                                    <a href='/'>
+                                    </div>
+                                    <div className='menuLink'>
                                         <Link to="/">
                                             Women
                                         </Link>
-                                    </a>
+                                    </div>
                                 </div>
                             </li>
                             <li className='list-inline-item'>
-                                <a href='/'>
+                                <div className='menuLink'>
                                     <img src='https://img.icons8.com/?size=100&id=47836&format=png&color=000000' alt='icons' />
                                     <Link to="/">
                                         Shop
                                     </Link>
-                                </a>
+                                </div>
                                 <div className='submenu false'>
-                                    <a href='/'>
+                                    <div className='menuLink'>
                                         <Link to="/">
                                             Mobiles
                                         </Link>
-                                    </a>
-                                    <a href='/'>
+                                    </div>
+                                    <div className='menuLink'>
                                         <Link to="/">
                                             Laptops
                                         </Link>
-                                    </a>
-                                    <a href='/'>
+                                    </div>
+                                    <div className='menuLink'>
                                         <Link to="/">
                                             Smart Watch
                                         </Link>
-                                    </a>
-                                    <a href='/'>
+                                    </div>
+                                    <div className='menuLink'>
                                         <Link to="/">
                                             Cameras
                                         </Link>
-                                    </a>
+                                    </div>
                                 </div>
 
                             </li>
                             <li className='list-inline-item'>
-                                <a href='/'>
+                                <div  className='menuLink'>
                                     <img src='https://img.icons8.com/?size=100&id=5273&format=png&color=000000' alt='icons' />
                                     <Link to="/">
                                         Meats & Seafood
                                     </Link>
-                                </a>
+                                </div>
                                 <div className='submenu false'>
-                                    <a href='/'>
+                                    <div className='menuLink'>
                                         <Link to="/">
                                             Nam
                                         </Link>
-                                    </a>
+                                    </div>
                                 </div>
                             </li>
                             <li className='list-inline-item'>
-                                <a href='/'>
+                                <div className='menuLink'>
                                     <img src='https://img.icons8.com/?size=100&id=UdgabpPaX1Xb&format=png&color=000000' alt='icons' />
                                     <Link to="/">
                                         Bakery
                                     </Link>
-                                </a>
+                                </div>
                                 <div className='submenu false'>
-                                    <a href='/'>
+                                    <div className='menuLink'>
                                         <Link to="/">
                                             Nam
                                         </Link>
-                                    </a>
+                                    </div>
                                 </div>
                             </li>
                             <li className='list-inline-item'>
-                                <a href='/'>
+                                <div className='menuLink' >
                                     <img src='https://img.icons8.com/?size=100&id=AXOqGJgVxm4z&format=png&color=000000' alt='icons' />
                                     <Link to="/">
                                         Beverages
                                     </Link>
-                                </a>
+                                </div>
                                 <div className='submenu false'>
-                                    <a href='/'>
+                                    <div className='menuLink'>
                                         <Link to="/">
                                             Nam
                                         </Link>
-                                    </a>
+                                    </div>
                                 </div>
                             </li>
                             <li className='list-inline-item'>
-                                <a href='/'>
+                                <div className='menuLink'>
                                     <Link to="/">
                                         Blog
                                     </Link>
-                                </a>
+                                </div>
                             </li>
                             <li className='list-inline-item'>
-                                <a href='/'>
+                                <div className='menuLink'>
                                     <Link to="/">
-
                                         Contact
                                     </Link>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
